@@ -29,6 +29,12 @@
       font-family: "Roboto", sans-serif;
     }
 
+    @media only screen and (max-width: 767px) {
+      .grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
     body {
       max-width: 41rem;
       margin: 0 auto;
@@ -209,174 +215,182 @@
   </style>
   <title>My CV</title>
 </head>
-<body class="grid">
-  <section class="left">
-    <div class="sub-container centered" id="avatar">
-      <img src="images/ava.jpg" alt="" class="avatar">
-    </div>
-    <div class="sub-container" id="info">
-      <h1 class="header-title">information</h1>
-      <div class="info-list flex-column">
-        <div class="grid info">
-          <div class="info-icon">
-            <i class="fa-solid fa-phone"></i>
+<body>
+  <header class="grid">
+    <section class="left">
+      <div class="sub-container centered" id="avatar">
+        <img src="images/ava.jpg" alt="" class="avatar">
+      </div>
+    </section>
+    <section class="right">
+      <div class="sub-container centered" id="name">
+        <h1 class="header-title">Nguyen Phu Minh Nhat</h1>
+        <h2 class="text">Full-Stack Developer</h2>
+      </div>
+    </section>
+  </header>
+  <main class="grid">
+    <section class="left">
+      <div class="sub-container" id="info">
+        <h1 class="header-title">information</h1>
+        <div class="info-list flex-column">
+          <div class="grid info">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-desc">
+              <div class="info-title uppercase">phone</div>
+              <div class="info-text">0372170061</div>
+            </div>
           </div>
-          <div class="info-desc">
-            <div class="info-title uppercase">phone</div>
-            <div class="info-text">0372170061</div>
+          <div class="grid info">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-desc">
+              <div class="info-title uppercase">email</div>
+              <div class="info-text">nhatnpmfx19824@funix.edu.vn</div>
+            </div>
           </div>
-        </div>
-        <div class="grid info">
-          <div class="info-icon">
-            <i class="fa-solid fa-envelope"></i>
+          <div class="grid info">
+            <div class="info-icon">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <div class="info-desc">
+              <div class="info-title uppercase">dob</div>
+              <div class="info-text">March 04, 1994</div>
+            </div>
           </div>
-          <div class="info-desc">
-            <div class="info-title uppercase">email</div>
-            <div class="info-text">nhatnpmfx19824@funix.edu.vn</div>
-          </div>
-        </div>
-        <div class="grid info">
-          <div class="info-icon">
-            <i class="fa-solid fa-cake-candles"></i>
-          </div>
-          <div class="info-desc">
-            <div class="info-title uppercase">dob</div>
-            <div class="info-text">March 04, 1994</div>
-          </div>
-        </div>
-        <div class="grid info info-last">
-          <div class="info-icon">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div class="info-desc">
-            <div class="info-title uppercase">address</div>
-            <div class="info-text">1803 Huynh Tan Phat street, Ho Chi Minh city</div>
+          <div class="grid info info-last">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info-desc">
+              <div class="info-title uppercase">address</div>
+              <div class="info-text">1803 Huynh Tan Phat street, Ho Chi Minh city</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="sub-container">
-      <blockquote>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis sunt nobis dignissimos mollitia perferendis a tempore temporibus quam praesentium hic saepe harum at accusamus corporis vero soluta quia obcaecati assumenda, ex enim? Alias quasi quidem, adipisci ea iure rem nam vero amet aut sed provident minima voluptatum dolores quisquam.
-      </blockquote>
-    </div> -->
-    <div class="sub-container" id="obj">
-      <h1 class="header-title">objective</h1>
-      <div class="obj">
-        <h2 class="obj-title">Short term</h2>
-        <div class="obj-text flex-column">
-          <p>
-            Become a junior developer within next 6-12 months.
-          </p>
-          <p>
-            Try to get used to the environment and work as quickly as possible.
-          </p>
-          <p>
-            Be proficient and know how to apply the knowledge learned in work.
-          </p>
-        </div>
-      </div>
-      <div class="obj">
-        <h2 class="obj-title">Long term</h2>
-        <div class="obj-text flex-column">
-          <p>
-            Become a senior developer within next 2-5 years.
-          </p>
-          <p>
-            Enchance skills and gain deep knowledge in work.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="sub-container" id="core-skills">
-      <h1 class="header-title">core skills</h1>
-      <div class="core-skills flex-column">
-        <div class="cs">
-          <span class="bold">Front-end: </span>
-          <span class="text">HTML, CSS, Javascript, ReactJS, Bootstrap.</span>
-        </div>
-        <div class="cs">
-          <span class="bold">Back-end: </span>
-          <span class="text">NodeJS, ExpressJS, SQL, MongoDB.</span>
-        </div>
-        <div class="cs">
-          <span class="bold">Computer: </span>
-          <span class="text">Word, Excel.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="right">
-    <div class="sub-container centered" id="name">
-      <h1 class="header-title">Nguyen Phu Minh Nhat</h1>
-      <h2 class="text">Full-Stack Developer</h2>
-    </div>
-    <div class="sub-container" id="education">
-      <h1 class="header-title">education</h1>
-      <div class="grid edu-grid">
-        <div class="text">10/2022 to present</div>
-        <div class="edu-info">
-          <div class="bold">FUNiX</div>
-          <div class="gpa">Building first website.</div>
-          <div class="text">GPA: 8.6</div>
-          <div class="gpa">Javascript Programming</div>
-          <div class="text">GPA: 7.5</div>
-          <div class="gpa">Front-End with ReactJS</div>
-          <div class="text">GPA: 7.6</div>
-          <div class="gpa">Back-End with NodeJS</div>
-          <div class="text">On learning</div>
-        </div>
-      </div>
-      <div class="grid edu-grid">
-        <div class="text">09/2009 to 05/2012</div>
-        <div class="edu-info">
-          <div class="bold">Ngo Quyen High school</div>
-          <div class="text">High school graduation</div>
-        </div>
-      </div>
-    </div>
-    <div class="sub-container" id="project">
-      <h1 class="header-title">project</h1>
-      <div class="link flex-column">
-        <div class="link-info">
-          <div class="bold">Github</div>
-          <p>https://github.com/Nhat0403/</p>
-        </div>
-        <!-- <div class="link-info">
-          <div class="bold">Demo Link</div>
-          <p>Please view at README.md file in Github</p>
-        </div> -->
-      </div>
-      <div class="project flex-column">
-        <div class="pj-info flex-column">
-          <div>
-            <span class="bold uppercase">pet management website</span>
-            <span class="grey text">FUNiX's PROJECT</span>
+      <!-- <div class="sub-container">
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis sunt nobis dignissimos mollitia perferendis a tempore temporibus quam praesentium hic saepe harum at accusamus corporis vero soluta quia obcaecati assumenda, ex enim? Alias quasi quidem, adipisci ea iure rem nam vero amet aut sed provident minima voluptatum dolores quisquam.
+        </blockquote>
+      </div> -->
+      <div class="sub-container" id="obj">
+        <h1 class="header-title">objective</h1>
+        <div class="obj">
+          <h2 class="obj-title">Short term</h2>
+          <div class="obj-text flex-column">
+            <p>
+              Become a junior developer within next 6-12 months.
+            </p>
+            <p>
+              Try to get used to the environment and work as quickly as possible.
+            </p>
+            <p>
+              Be proficient and know how to apply the knowledge learned in work.
+            </p>
           </div>
-          <p>
-            - The application built with HTML, CSS, Javascript.
-          </p>
-          <p>
-            - Helps to manage the pet's informationsuch as: Weight, breed, vaccination status, ...
-          </p>
-          <p>
-            - Including the add/edit/delete function.
-          </p>
         </div>
-        <div class="pj-info flex-column">
-          <div>
-            <span class="bold uppercase">news website</span>
-            <span class="grey text"> - FUNiX's PROJECT</span>
+        <div class="obj">
+          <h2 class="obj-title">Long term</h2>
+          <div class="obj-text flex-column">
+            <p>
+              Become a senior developer within next 2-5 years.
+            </p>
+            <p>
+              Enchance skills and gain deep knowledge in work.
+            </p>
           </div>
-          <p>
-            - Web site viewing news built with HTML, CSS, Javascript.
-          </p>
-          <p>
-            - From many different sources, people Users can search for news based on keywords.
-          </p>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="sub-container" id="core-skills">
+        <h1 class="header-title">core skills</h1>
+        <div class="core-skills flex-column">
+          <div class="cs">
+            <span class="bold">Front-end: </span>
+            <span class="text">HTML, CSS, Javascript, ReactJS, Bootstrap.</span>
+          </div>
+          <div class="cs">
+            <span class="bold">Back-end: </span>
+            <span class="text">NodeJS, ExpressJS, SQL, MongoDB.</span>
+          </div>
+          <div class="cs">
+            <span class="bold">Computer: </span>
+            <span class="text">Word, Excel.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="right">
+      <div class="sub-container" id="education">
+        <h1 class="header-title">education</h1>
+        <div class="grid edu-grid">
+          <div class="text">10/2022 to present</div>
+          <div class="edu-info">
+            <div class="bold">FUNiX</div>
+            <div class="gpa">Building first website.</div>
+            <div class="text">GPA: 8.6</div>
+            <div class="gpa">Javascript Programming</div>
+            <div class="text">GPA: 7.5</div>
+            <div class="gpa">Front-End with ReactJS</div>
+            <div class="text">GPA: 7.6</div>
+            <div class="gpa">Back-End with NodeJS</div>
+            <div class="text">On learning</div>
+          </div>
+        </div>
+        <div class="grid edu-grid">
+          <div class="text">09/2009 to 05/2012</div>
+          <div class="edu-info">
+            <div class="bold">Ngo Quyen High school</div>
+            <div class="text">High school graduation</div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-container" id="project">
+        <h1 class="header-title">project</h1>
+        <div class="link flex-column">
+          <div class="link-info">
+            <div class="bold">Github</div>
+            <p>https://github.com/Nhat0403/</p>
+          </div>
+          <!-- <div class="link-info">
+            <div class="bold">Demo Link</div>
+            <p>Please view at README.md file in Github</p>
+          </div> -->
+        </div>
+        <div class="project flex-column">
+          <div class="pj-info flex-column">
+            <div>
+              <span class="bold uppercase">pet management website</span>
+              <span class="grey text">FUNiX's PROJECT</span>
+            </div>
+            <p>
+              - The application built with HTML, CSS, Javascript.
+            </p>
+            <p>
+              - Helps to manage the pet's informationsuch as: Weight, breed, vaccination status, ...
+            </p>
+            <p>
+              - Including the add/edit/delete function.
+            </p>
+          </div>
+          <div class="pj-info flex-column">
+            <div>
+              <span class="bold uppercase">news website</span>
+              <span class="grey text"> - FUNiX's PROJECT</span>
+            </div>
+            <p>
+              - Web site viewing news built with HTML, CSS, Javascript.
+            </p>
+            <p>
+              - From many different sources, people Users can search for news based on keywords.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
