@@ -132,10 +132,6 @@
       font-weight: 900;
     }
 
-    #core-skills {
-      height: 152px;
-    }
-
     .obj-title {
       margin-bottom: 0.5rem;
     }
@@ -174,16 +170,20 @@
       font-weight: 700;
     }
 
-    #project {
-      height: 396px;
-    }
-
     .project {
       gap: 1rem;
     }
 
     .pj-text {
       gap: 0.5rem;
+    }
+    
+    #core-skills {
+      height: 9rem;
+    }
+    
+    #project {
+      height: 27rem;
     }
   </style>
   <title>My CV</title>
@@ -243,18 +243,26 @@
       <h1 class="header-title">objective</h1>
       <div class="obj">
         <h2 class="obj-title">Short term</h2>
-        <p class="obj-text">
-          Become a junior developer within next 6-12 months.
-          Try to get used to the environment and work as quickly as possible.
-          Be proficient and know how to apply the knowledge learned in work.
-        </p>
+        <div class="obj-text flex-column">
+          <p>
+            Become a junior developer within next 6-12 months.
+            Try to get used to the environment and work as quickly as possible.
+          </p>
+          <p>
+            Be proficient and know how to apply the knowledge learned in work.
+          </p>
+        </div>
       </div>
       <div class="obj">
         <h2 class="obj-title">Long term</h2>
-        <p class="obj-text">
-          Become a senior developer within next 2-5 years.
-          Enchance skills and gain deep knowledge in work.
-        </p>
+        <div class="obj-text flex-column">
+          <p>
+            Become a senior developer within next 2-5 years.
+          </p>
+          <p>
+            Enchance skills and gain deep knowledge in work.
+          </p>
+        </div>
       </div>
     </div>
     <div class="sub-container" id="core-skills">
